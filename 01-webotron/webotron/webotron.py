@@ -95,6 +95,7 @@ def convertPath(path):
 		path = path.replace(separator,'/')
 	return path
 
+
 @cli.command('sync')
 @click.argument('pathname', type=click.Path(exists=True))
 @click.argument('bucket')
